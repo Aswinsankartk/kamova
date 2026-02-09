@@ -1,30 +1,111 @@
-*{
-    margin:0;
-    padding: 0;
+html{
+    font-size: 16px;
 }
 body{
-    font-family: "Inter",sans-serif;
-    background-color: hsl(0,0%,5%);
+    height: 100%;
+    background-color: hsla(235, 0%, 8%, 1);
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Funnel Display",sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .title{
-    font-size: 150px;
-    color: hsl(209, 100%, 89%);
+    color:hsla(48, 100%, 78%, 1);
+    font-size: 3.5rem;
+    text-align: center;
+    margin:2rem 0 3rem 0;
 }
-.textbox{
-    border:solid 2px hsl(0,0%,80%);
-    font-size: 25px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #ffff;
+.input{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:1.5rem;
 }
-.get-weather-btn{
-    border: 0;
-    padding: 5px 10px;
-    font-size: 25px;
-    border-radius: 5px;
+.city{
+    height:2.8rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    border:1px solid hsla(48, 100%, 78%, 1);
+    background-color:hsla(48, 0%, 11%, 1);
+    max-width: 70vw;
+    color:hsla(48, 100%, 78%, 1);
+    transition: scale 0.1s ease-in-out;
+    margin: 1rem 0;
 }
-.output{
-    color: white;
-    font-size: 10px;
+.weather-btn{
+    padding:0.8rem 1.5rem;
+    font-size: 0.9rem;
+    max-width: 10rem;
+    border-radius: 2rem;
+    border:none;
+    font-weight: 600;
+    background-color: hsla(48, 100%, 78%, 1);
+    box-sizing:border-box;
+    transition: all 0.1s ease-in-out;
+}
+.result{
+    color:hsla(48, 100%, 78%, 1);
+    display:flex;
+    font-size: 1.2rem;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    margin:2rem 0;
+}
+footer{
+    font-size: 0.6rem;
+    color:hsl(0,0%,50%);
+    text-align:center;
+    width:100%;
+}
+main{
+    flex-grow: 1;
+}
+.city:focus{
+    scale:1.01;
+    outline:none;
+}
+button:hover{
+    outline: 1px solid hsla(48, 100%, 78%, 1);
+    color:hsla(48, 100%, 78%, 1);
+    box-sizing:border-box;
+    background-color:transparent;
+}
+button:active{
+    scale:1.01;
+    color:hsla(48, 100%, 90%, 1);
+}
+@media (min-width: 600px){
+    html{
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px){
+    html{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1024px){
+    html{
+        font-size: 22px;
+    }
+}
+@media (min-width: 1440px){
+    html{
+        font-size: 25px;
+    }
 }

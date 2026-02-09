@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <main>
         <h1 class="title">Kamova</h1>
-        <input type="text" class="textbox" placeholder="Enter place name">
-        <button class="get-weather-btn" onclick="getWeatherData()">Get Weather</button>
-        <div class="output">
+        <div class="input">
+            <input type="text" class="city" placeholder="Enter place name">
+            <button class="weather-btn" onclick="getWeatherData();">Get Weather</button>
         </div>
-    </div>
+        <div class="result"></div>
+    </main>
+    <footer>All Rights Reserved &copy; Aswin Sankar</footer>
 </body>
 </html>
